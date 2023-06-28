@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
        /* body{
             height: 97vh;
@@ -18,12 +18,18 @@
             background-color: black;
             background-image: url(wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            /*background: black url(wallpaper002.jpg) center top no-repeat  fixed;
+            background-size: cover;*/
         }
+        /* SHORTHAND - BACKGROUND
+        
+        color > image > position > repeat > [size] > attachmnet*/
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border-radius: 15px;
