@@ -61,9 +61,10 @@ section.imagem{
     color: white;
 
 }
+section
 section.imagem > p{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.253)
 }
 footer{
     background-color: black;
