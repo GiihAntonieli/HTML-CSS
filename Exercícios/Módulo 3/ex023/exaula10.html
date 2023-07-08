@@ -11,9 +11,13 @@
         table{
             border-collapse: collapse;
             width: 400px;
-                background-color: darkslategray;
-            color: white;
-        }         
+        }  
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+        }       
         th, td{
            border: 1px solid black;
            padding: 15px; 
@@ -27,19 +31,27 @@
 </head>
 <body>
     <h1>Tabela Completa</h1>
+    
     <table>
+        <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th colspan="2">Nomes</th>            
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th  scope="col">Nomes</th>            
+                <th colspan="3" scope="colgroup3">Filmes</th>
                            
             </tr>
-        </thead>  
+        </thead> 
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <th>1000</th>
+            </tr>
+        </tfoot> 
         <tbody>  
             <tr>
-                <td rowspan="3"><strong>Mulheres</strong></td>
-                <td colspan="2" class="nomes">Ana Maria Santos</td>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td class="nomes">Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
                 <td>Vingadores</td>
@@ -47,7 +59,7 @@
             </tr>
             <tr>
                 
-                <td colspan="2" class="nomes">Beatriz Souza</td>
+                <td class="nomes">Beatriz Souza</td>
                 <td>Hulk</td>
                 <td>Inception</td>
                 <td>Batman</td>
@@ -55,15 +67,15 @@
             </tr>
             <tr>
                 
-                <td colspan="2" class="nomes">Cláudia Melo</td>
+                <td class="nomes">Cláudia Melo</td>
                 <td>Oblivion</td>
                 <td>Matrix</td>
                 <td>Big Hero</td>
                            
             </tr>
             <tr>
-                <td rowspan="3"><strong>Homens</strong></td>
-                <td colspan="2" class="nomes">Bruno Mendonça</td>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td class="nomes">Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
                 <td>Gladiador</td>
@@ -71,7 +83,7 @@
             </tr>
             <tr>
                 
-                <td colspan="2" class="nomes">Daniel Lourenço</td>
+                <td class="nomes">Daniel Lourenço</td>
                 <td>Wall-E</td>
                 <td>Oldboy</td>
                 <td>Dangal</td>
@@ -79,7 +91,7 @@
             </tr>
             <tr>
                 
-                <td colspan="2"  class="nomes">Fabiano Mota</td>
+                <td class="nomes">Fabiano Mota</td>
                 <td>Star-Wars 5</td>
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
