@@ -9,11 +9,34 @@
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
+            <legend>Sexo</legend>
             <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" placeholder="nome do usuário" maxlength="50" autocomplete="name" required>
+                <input type="radio" name="sx" id="isxmas"><label for="isxmas">Masculino</label><br>
+                <input type="radio" name="sx" id="isxfem"><label for="isxfem">Feminino</label>
             </p>
         </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut"> Fútebol </label><br>
+                <input type="checkbox" name="esvolei" id="iesvolei"><label for="iesvolei"> Vôlei </label> <br>
+                <input type="checkbox" name="esbasquete" id="iesbasquete"><label for="iesbasquete"> Basquete </label><br>
+                <input type="checkbox" name="esnatacao" id="iesnatacao"><label for="iesnatacao"> Natação </label><br>
+            </p>
+
+            <!--<p>
+                <label for="inome">Esporte: </label>
+                <input type="text" name="nome" id="inome" placeholder="nome do usuário" maxlength="50" autocomplete="name" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>-->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
